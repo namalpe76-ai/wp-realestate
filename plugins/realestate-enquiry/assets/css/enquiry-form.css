@@ -1,0 +1,182 @@
+.ree-enquiry-form {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.ree-enquiry-form .ree-form-group {
+    margin-bottom: 20px;
+}
+
+.ree-enquiry-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+}
+
+.ree-enquiry-form .ree-required {
+    color: #dc3545;
+}
+
+.ree-enquiry-form input[type="text"],
+.ree-enquiry-form input[type="email"],
+.ree-enquiry-form input[type="tel"],
+.ree-enquiry-form input[type="date"],
+.ree-enquiry-form select,
+.ree-enquiry-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.ree-enquiry-form input:focus,
+.ree-enquiry-form select:focus,
+.ree-enquiry-form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.ree-enquiry-form input.ree-field-error,
+.ree-enquiry-form select.ree-field-error,
+.ree-enquiry-form textarea.ree-field-error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.ree-enquiry-form .ree-error-msg {
+    display: none;
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.ree-enquiry-form .ree-error-msg.visible {
+    display: block;
+}
+
+.ree-enquiry-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.ree-enquiry-form .ree-radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 4px 0;
+}
+
+.ree-enquiry-form .ree-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ree-enquiry-form .ree-radio-label input[type="radio"] {
+    width: auto;
+    accent-color: #d4af37;
+}
+
+.ree-enquiry-form .ree-form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.ree-enquiry-form .ree-half {
+    flex: 1;
+}
+
+.ree-enquiry-form .ree-hp-field {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.ree-enquiry-form .ree-submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 28px;
+    background: #d4af37;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    letter-spacing: 0.3px;
+}
+
+.ree-enquiry-form .ree-submit-btn:hover {
+    background: #c9a227;
+}
+
+.ree-enquiry-form .ree-submit-btn:active {
+    transform: scale(0.98);
+}
+
+.ree-enquiry-form .ree-submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#ree-form-messages {
+    margin-top: 16px;
+}
+
+#ree-form-messages .ree-success-msg {
+    padding: 14px 18px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#ree-form-messages .ree-error-global {
+    padding: 14px 18px;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .ree-enquiry-form {
+        padding: 20px;
+    }
+
+    .ree-enquiry-form .ree-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ree-enquiry-form .ree-radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

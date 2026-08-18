@@ -1,0 +1,605 @@
+{
+  "id": "11aa-home-page",
+  "title": "11AA Home Page",
+  "type": "page",
+  "version": "0.4",
+  "author": "11AA Real Estate",
+  "description": "Home page template with hero, property search, datetime/weather widgets, stats, featured properties, services overview, testimonials, and CTA.",
+  "elements": [
+    {
+      "id": "home-hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "background_background": "classic",
+        "background_image": {"url": "assets/images/hero-bg.jpg", "id": 0, "size": ""},
+        "background_overlay_color": "#000000",
+        "background_overlay_opacity": {"unit": "px", "size": 0.45, "sizes": []},
+        "padding": {"unit": "px", "top": "180", "right": "0", "bottom": "180", "left": "0", "isLinked": false},
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "flex_direction": "column",
+        "text_align": "center"
+      },
+      "elements": [
+        {
+          "id": "hero-subtitle",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Premium Real Estate in Sri Lanka",
+            "header_size": "h6",
+            "align": "center",
+            "title_color": "#c8a951",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 16, "sizes": []},
+            "typography_letter_spacing": {"unit": "px", "size": 3, "sizes": []},
+            "typography_text_transform": "uppercase"
+          }
+        },
+        {
+          "id": "hero-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Find Your Perfect Property",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 56, "sizes": []},
+            "typography_font_size_tablet": {"unit": "px", "size": 40, "sizes": []},
+            "typography_font_size_mobile": {"unit": "px", "size": 28, "sizes": []},
+            "typography_font_weight": "700"
+          }
+        },
+        {
+          "id": "hero-desc",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Discover exceptional properties that match your lifestyle. From luxury apartments to family homes, we help you find the place you'll love coming home to.</p>",
+            "text_color": "#E0E0E0",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 18, "sizes": []},
+            "_padding": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": false}
+          }
+        },
+        {
+          "id": "hero-buttons",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Browse Properties",
+            "link": {"url": "/properties/", "is_external": "", "nofollow": ""},
+            "button_type": "",
+            "align": "center",
+            "button_type_color": "",
+            "background_color": "#c8a951",
+            "button_text_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 16, "sizes": []},
+            "border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true},
+            "text_padding": {"unit": "px", "top": "14", "right": "32", "bottom": "14", "left": "32", "isLinked": false},
+            "_margin": {"unit": "px", "top": "20", "right": "10", "bottom": "0", "left": "0", "isLinked": false}
+          }
+        }
+      ]
+    },
+    {
+      "id": "search-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true},
+        "border_color": "#E8E8E8",
+        "border_shadow_box_shadow": "yes",
+        "border_shadow_box_shadow_type": "yes",
+        "border_shadow_box_shadow_color": "rgba(0,0,0,0.08)",
+        "border_shadow_box_shadow_horizontal": 0,
+        "border_shadow_box_shadow_vertical": 4,
+        "border_shadow_box_shadow_blur": 15,
+        "border_shadow_box_shadow_spread": 0,
+        "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true},
+        "margin": {"unit": "px", "top": "-50", "right": "0", "bottom": "0", "left": "0", "isLinked": false},
+        "z_index": 10
+      },
+      "elements": [
+        {
+          "id": "search-shortcode",
+          "elType": "widget",
+          "widgetType": "shortcode",
+          "settings": {
+            "shortcode": "[property_search layout=\"horizontal\"]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "datetime-weather-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#F7F8FA",
+        "padding": {"unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "dtw-column-datetime",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "padding": {"unit": "px", "top": "0", "right": "15", "bottom": "0", "left": "15", "isLinked": false}
+          },
+          "elements": [
+            {
+              "id": "dtw-datetime-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Date & Time",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1A1A2E"
+              }
+            },
+            {
+              "id": "dtw-datetime-shortcode",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[datetime_display]"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dtw-column-weather",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "padding": {"unit": "px", "top": "0", "right": "15", "bottom": "0", "left": "15", "isLinked": false}
+          },
+          "elements": [
+            {
+              "id": "dtw-weather-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Weather",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1A1A2E"
+              }
+            },
+            {
+              "id": "dtw-weather-shortcode",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[weather_widget]"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats-section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#1A1A2E",
+        "padding": {"unit": "px", "top": "70", "right": "0", "bottom": "70", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "stats-shortcode",
+          "elType": "widget",
+          "widgetType": "shortcode",
+          "settings": {
+            "shortcode": "[realestate_stats show=\"all\"]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "featured-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "featured-header",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Explore Our Top Picks",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#1A1A2E"
+          }
+        },
+        {
+          "id": "featured-divider",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "dotted",
+            "weight": {"unit": "px", "size": 1, "sizes": []},
+            "color": "#c8a951",
+            "width": {"unit": "px", "size": 80, "sizes": []},
+            "align": "center"
+          }
+        },
+        {
+          "id": "featured-subtitle",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align: center;'>Handpicked properties that offer the best value, location, and lifestyle for discerning buyers.</p>",
+            "text_color": "#666666",
+            "align": "center"
+          }
+        },
+        {
+          "id": "featured-posts",
+          "elType": "widget",
+          "widgetType": "posts",
+          "settings": {
+            "posts_per_page": 6,
+            "post_type": "property",
+            "columns": 3,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "image_size": "medium_large",
+            "show_title": true,
+            "show_excerpt": false,
+            "show_date": false,
+            "show_author": false,
+            "_margin": {"unit": "px", "top": "30", "right": "0", "bottom": "0", "left": "0", "isLinked": false}
+          }
+        },
+        {
+          "id": "featured-cta",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "View All Properties →",
+            "link": {"url": "/properties/", "is_external": "", "nofollow": ""},
+            "align": "center",
+            "background_color": "#1A1A2E",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true},
+            "text_padding": {"unit": "px", "top": "14", "right": "32", "bottom": "14", "left": "32", "isLinked": false},
+            "_margin": {"unit": "px", "top": "30", "right": "0", "bottom": "0", "left": "0", "isLinked": false}
+          }
+        }
+      ]
+    },
+    {
+      "id": "services-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#F7F8FA",
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "services-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "What We Offer",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#1A1A2E"
+          }
+        },
+        {
+          "id": "services-divider",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "dotted",
+            "weight": {"unit": "px", "size": 1, "sizes": []},
+            "color": "#c8a951",
+            "width": {"unit": "px", "size": 80, "sizes": []},
+            "align": "center"
+          }
+        },
+        {
+          "id": "services-subtitle",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align: center;'>Comprehensive real estate solutions tailored to meet your unique needs and goals.</p>",
+            "text_color": "#666666"
+          }
+        },
+        {
+          "id": "services-columns",
+          "elType": "section",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {"unit": "px", "size": 1200, "sizes": []},
+            "flex_direction": "row",
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}
+          },
+          "elements": [
+            {
+              "id": "svc-col-1",
+              "elType": "column",
+              "settings": {"_column_size": 25, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "svc-buying",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-home", "library": "fa-solid"},
+                    "title": "Property Buying",
+                    "description": "Expert guidance through every step of the property buying process, from search to closing.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 40, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "svc-col-2",
+              "elType": "column",
+              "settings": {"_column_size": 25, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "svc-selling",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-briefcase", "library": "fa-solid"},
+                    "title": "Property Selling",
+                    "description": "Strategic marketing and pricing to sell your property quickly and at the best possible price.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 40, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "svc-col-3",
+              "elType": "column",
+              "settings": {"_column_size": 25, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "svc-leasing",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-box", "library": "fa-solid"},
+                    "title": "Property Leasing",
+                    "description": "Comprehensive rental solutions for both landlords and tenants with market-leading expertise.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 40, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "svc-col-4",
+              "elType": "column",
+              "settings": {"_column_size": 25, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "svc-invest",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-chart-line", "library": "fa-solid"},
+                    "title": "Investment Advisory",
+                    "description": "Data-driven investment guidance to help you build and manage a profitable real estate portfolio.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 40, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testimonials-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100, "sizes": []},
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "testi-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "What Our Clients Say",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#1A1A2E"
+          }
+        },
+        {
+          "id": "testi-divider",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "dotted",
+            "weight": {"unit": "px", "size": 1, "sizes": []},
+            "color": "#c8a951",
+            "width": {"unit": "px", "size": 80, "sizes": []},
+            "align": "center"
+          }
+        },
+        {
+          "id": "testi-columns",
+          "elType": "section",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {"unit": "px", "size": 1100, "sizes": []}
+          },
+          "elements": [
+            {
+              "id": "testi-col-1",
+              "elType": "column",
+              "settings": {"_column_size": 33, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "testi-1",
+                  "elType": "widget",
+                  "widgetType": "testimonial",
+                  "settings": {
+                    "testimonial_content": "Outstanding service from start to finish. They found us the perfect family home within our budget. Highly recommended!",
+                    "testimonial_name": "James Rodriguez",
+                    "testimonial_job_position": "Home Builder",
+                    "testimonial_image": {"url": "", "id": 0},
+                    "testimonial_image_size": "thumbnail",
+                    "align": "left",
+                    "content_background_color": "#F7F8FA",
+                    "content_padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": false}
+                  }
+                }
+              ]
+            },
+            {
+              "id": "testi-col-2",
+              "elType": "column",
+              "settings": {"_column_size": 33, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "testi-2",
+                  "elType": "widget",
+                  "widgetType": "testimonial",
+                  "settings": {
+                    "testimonial_content": "Professional, responsive, and truly cares about their clients. Our property was sold above asking price in just two weeks!",
+                    "testimonial_name": "Sarah Chen",
+                    "testimonial_job_position": "Property Seller",
+                    "testimonial_image": {"url": "", "id": 0},
+                    "testimonial_image_size": "thumbnail",
+                    "align": "left",
+                    "content_background_color": "#F7F8FA",
+                    "content_padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": false}
+                  }
+                }
+              ]
+            },
+            {
+              "id": "testi-col-3",
+              "elType": "column",
+              "settings": {"_column_size": 33, "padding": {"unit": "px", "top": "10", "right": "15", "bottom": "10", "left": "15", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "testi-3",
+                  "elType": "widget",
+                  "widgetType": "testimonial",
+                  "settings": {
+                    "testimonial_content": "Their investment advisory service helped me make informed decisions. My portfolio has grown significantly in just one year.",
+                    "testimonial_name": "Michael Kim",
+                    "testimonial_job_position": "Investor",
+                    "testimonial_image": {"url": "", "id": 0},
+                    "testimonial_image_size": "thumbnail",
+                    "align": "left",
+                    "content_background_color": "#F7F8FA",
+                    "content_padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": false}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta-section",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#c8a951",
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false},
+        "text_align": "center"
+      },
+      "elements": [
+        {
+          "id": "cta-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Ready to Find Your Dream Property?",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 38, "sizes": []}
+          }
+        },
+        {
+          "id": "cta-desc",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Let our expert team help you navigate the real estate market and find the perfect property for your needs.</p>",
+            "text_color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "id": "cta-button",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Browse Properties",
+            "link": {"url": "/properties/", "is_external": "", "nofollow": ""},
+            "align": "center",
+            "background_color": "#1A1A2E",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true},
+            "text_padding": {"unit": "px", "top": "14", "right": "32", "bottom": "14", "left": "32", "isLinked": false},
+            "_margin": {"unit": "px", "top": "10", "right": "10", "bottom": "0", "left": "0", "isLinked": false}
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Docker volumes (data persistence)
+docker/mysql_data/
+docker/wordpress_data/
+
+# WordPress core files (managed by Docker)
+# But keep custom themes/plugins in the repo
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment overrides
+docker/.env.local
+
+# Logs
+*.log

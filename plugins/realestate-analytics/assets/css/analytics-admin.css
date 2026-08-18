@@ -1,0 +1,196 @@
+.realestate-analytics-wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.realestate-analytics-wrap h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #1d2327;
+}
+
+.analytics-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.analytics-card {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.analytics-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.card-visitors::before { background: #2271b1; }
+.card-pageviews::before { background: #135e96; }
+.card-today::before { background: #00a32a; }
+.card-month::before { background: #dba617; }
+.card-properties::before { background: #996800; }
+.card-sold::before { background: #d63638; }
+.card-customers::before { background: #8c51cf; }
+
+.analytics-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.card-icon {
+    font-size: 32px;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #f0f0f1;
+}
+
+.card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-content h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #646970;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d2327;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.card-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.card-form input[type="number"] {
+    width: 80px;
+    padding: 4px 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.analytics-chart-section {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.analytics-chart-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 24px 0;
+}
+
+.analytics-bar-chart {
+    width: 100%;
+}
+
+.chart-bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 250px;
+    padding: 20px 0;
+    gap: 12px;
+}
+
+.chart-bar-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.chart-bar-value {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d2327;
+    margin-bottom: 6px;
+}
+
+.chart-bar {
+    width: 100%;
+    max-width: 60px;
+    background: linear-gradient(180deg, #2271b1, #135e96);
+    border-radius: 6px 6px 0 0;
+    min-height: 4px;
+    transition: height 0.6s ease;
+}
+
+.chart-bar-label {
+    font-size: 11px;
+    color: #646970;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.analytics-shortcode-info {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.analytics-shortcode-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 12px 0;
+}
+
+.analytics-shortcode-info code {
+    background: #f0f0f1;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #2271b1;
+}
+
+@media (max-width: 768px) {
+    .analytics-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-bars {
+        height: 180px;
+    }
+}

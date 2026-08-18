@@ -1,0 +1,194 @@
+.ree-admin-wrap {
+    max-width: 1280px;
+}
+
+.ree-admin-wrap .wp-heading-inline {
+    margin-right: 10px;
+}
+
+.ree-enquiries-table {
+    margin-top: 0;
+}
+
+.ree-enquiries-table .column-id {
+    text-align: center;
+    width: 50px;
+}
+
+.ree-enquiries-table .column-name a {
+    font-weight: 600;
+    color: #1d2327;
+    text-decoration: none;
+}
+
+.ree-enquiries-table .column-name a:hover {
+    color: #d4af37;
+}
+
+.ree-enquiries-table .column-email a {
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.ree-enquiries-table .column-email a:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+.ree-enquiries-table .column-status select {
+    font-size: 12px;
+    padding: 2px 4px;
+    min-height: auto;
+    width: auto;
+}
+
+.ree-enquiries-table .column-actions .button {
+    display: inline-block;
+    padding: 0 6px;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.ree-enquiries-table .column-actions .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.ree-enquiries-table .column-actions .dashicons-visibility {
+    color: #0073aa;
+}
+
+.ree-enquiries-table .column-actions .dashicons-trash {
+    color: #dc3545;
+}
+
+.ree-status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.ree-status-badge.status-new {
+    background-color: #28a745;
+}
+
+.ree-status-badge.status-contacted {
+    background-color: #007bff;
+}
+
+.ree-status-badge.status-viewing_scheduled {
+    background-color: #fd7e14;
+}
+
+.ree-status-badge.status-negotiation {
+    background-color: #6f42c1;
+}
+
+.ree-status-badge.status-closed {
+    background-color: #6c757d;
+}
+
+.ree-filter-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ree-status-filter {
+    min-width: 160px;
+}
+
+.ree-search-input {
+    min-width: 260px;
+}
+
+.ree-export-btn {
+    vertical-align: middle;
+}
+
+.tablenav .ree-bulk-apply,
+.tablenav .ree-bulk-apply-bottom {
+    margin-left: 6px;
+}
+
+.column-actions .button-link-delete {
+    color: #b32d2e;
+}
+
+.column-actions .button-link-delete:hover {
+    color: #a00;
+}
+
+.ree-enquiries-table tr:hover {
+    background-color: #f6f7f7;
+}
+
+.ree-detail-table th {
+    font-weight: 600;
+    padding: 10px 10px 10px 0;
+    color: #1d2327;
+    border-bottom: 1px solid #f0f0f1;
+    vertical-align: top;
+}
+
+.ree-detail-table td {
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #f0f0f1;
+    vertical-align: top;
+}
+
+.ree-message-box {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    color: #3c434a;
+}
+
+.ree-current-status {
+    margin-bottom: 12px;
+}
+
+.ree-status-form select {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.ree-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #787c82;
+    font-style: italic;
+}
+
+@media (max-width: 960px) {
+    .ree-admin-wrap .wp-list-table,
+    .ree-admin-wrap .tablenav {
+        overflow-x: auto;
+    }
+
+    .ree-admin-dashboard {
+        flex-wrap: wrap;
+    }
+
+    .ree-stat-card {
+        min-width: 100px;
+        flex: 1;
+    }
+}

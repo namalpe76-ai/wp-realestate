@@ -1,0 +1,38 @@
+=========================================
+  Real Estate WordPress - Docker Setup
+=========================================
+
+PREREQUISITES:
+  - Docker Desktop installed and running
+
+QUICK START:
+  1. Open a terminal in this "docker" folder
+  2. Run:  docker-compose up -d
+  3. Wait ~30 seconds for containers to initialize
+
+URLS:
+  WordPress:    http://localhost:8082
+  phpMyAdmin:   http://localhost:8081
+
+PHPMYADMIN LOGIN:
+  Server:   db
+  Username: realestate_admin
+  Password: realestate_pass_2026
+
+  (Or use root / realestate_root_2026)
+
+DATABASE NAME: realestate_wp
+
+USEFUL COMMANDS:
+  Start:        docker-compose up -d
+  Stop:         docker-compose down
+  View logs:    docker-compose logs -f
+  Restart all:  docker-compose restart
+  Stop & wipe:  docker-compose down -v  (deletes database data!)
+
+NOTES:
+  - WordPress files persist in the wordpress_data volume
+  - MySQL data persists in the mysql_data volume
+  - Custom PHP settings are in php-custom.ini
+  - PHP config changes require: docker-compose restart wordpress
+=========================================

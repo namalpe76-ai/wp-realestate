@@ -1,0 +1,420 @@
+{
+  "id": "11aa-about-page",
+  "title": "11AA About Us Page",
+  "type": "page",
+  "version": "0.4",
+  "author": "11AA Real Estate",
+  "description": "About Us page with hero, mission/vision, core values, why choose us, team, statistics, and CTA.",
+  "elements": [
+    {
+      "id": "about-hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#1A1A2E",
+        "padding": {"unit": "px", "top": "120", "right": "0", "bottom": "120", "left": "0", "isLinked": false},
+        "text_align": "center"
+      },
+      "elements": [
+        {
+          "id": "about-hero-subtitle",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "About Us",
+            "header_size": "h6",
+            "align": "center",
+            "title_color": "#c8a951",
+            "typography_typography": "custom",
+            "typography_letter_spacing": {"unit": "px", "size": 3, "sizes": []},
+            "typography_text_transform": "uppercase"
+          }
+        },
+        {
+          "id": "about-hero-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Your Trusted Real Estate Partner",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 48, "sizes": []}
+          }
+        },
+        {
+          "id": "about-hero-desc",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>With over a decade of experience in the Sri Lankan real estate market, we've helped hundreds of families and investors find their perfect property.</p>",
+            "text_color": "#CCCCCC",
+            "align": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "about-intro",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 900, "sizes": []},
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false},
+        "text_align": "center"
+      },
+      "elements": [
+        {
+          "id": "about-intro-text",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>11AA Real Estate has established itself as a trusted name in property sales, rentals, and management across Sri Lanka. Our team of dedicated professionals is committed to helping you find the perfect property that matches your lifestyle and investment goals.</p><p>We combine deep local market knowledge with modern technology to deliver a seamless real estate experience. Whether you're buying your first home, selling a commercial property, or building an investment portfolio — we're here to help every step of the way.</p>",
+            "text_color": "#444444",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 17, "sizes": []}
+          }
+        }
+      ]
+    },
+    {
+      "id": "mission-vision",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#F7F8FA",
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "mv-columns",
+          "elType": "section",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {"unit": "px", "size": 1100, "sizes": []}
+          },
+          "elements": [
+            {
+              "id": "mv-col-mission",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": false}
+              },
+              "elements": [
+                {
+                  "id": "mission-icon",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-bullseye", "library": "fa-solid"},
+                    "title": "Our Mission",
+                    "description": "To provide exceptional real estate services that exceed client expectations through integrity, innovation, and deep market expertise. We strive to make every property transaction seamless and rewarding.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "left",
+                    "icon_align": "left",
+                    "icon_size": {"unit": "px", "size": 36, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mv-col-vision",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": false}
+              },
+              "elements": [
+                {
+                  "id": "vision-icon",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-eye", "library": "fa-solid"},
+                    "title": "Our Vision",
+                    "description": "To be Sri Lanka's most trusted and innovative real estate company, known for our commitment to client satisfaction, market knowledge, and ethical business practices.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "left",
+                    "icon_align": "left",
+                    "icon_size": {"unit": "px", "size": 36, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-values",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1200, "sizes": []},
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "cv-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Our Core Values",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#1A1A2E"
+          }
+        },
+        {
+          "id": "cv-divider",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "dotted",
+            "weight": {"unit": "px", "size": 1, "sizes": []},
+            "color": "#c8a951",
+            "width": {"unit": "px", "size": 80, "sizes": []},
+            "align": "center"
+          }
+        },
+        {
+          "id": "cv-columns",
+          "elType": "section",
+          "settings": {
+            "layout": "boxed",
+            "content_width": {"unit": "px", "size": 1200, "sizes": []}
+          },
+          "elements": [
+            {
+              "id": "cv-col-1",
+              "elType": "column",
+              "settings": {"_column_size": 20, "padding": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "cv-integrity",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-handshake", "library": "fa-solid"},
+                    "title": "Integrity",
+                    "description": "We conduct all business with the highest ethical standards.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 32, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cv-col-2",
+              "elType": "column",
+              "settings": {"_column_size": 20, "padding": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "cv-excellence",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-star", "library": "fa-solid"},
+                    "title": "Excellence",
+                    "description": "We pursue excellence in every aspect of our service.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 32, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cv-col-3",
+              "elType": "column",
+              "settings": {"_column_size": 20, "padding": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "cv-client",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-users", "library": "fa-solid"},
+                    "title": "Client Focus",
+                    "description": "Our clients' needs drive every decision we make.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 32, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cv-col-4",
+              "elType": "column",
+              "settings": {"_column_size": 20, "padding": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "cv-innovation",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-lightbulb", "library": "fa-solid"},
+                    "title": "Innovation",
+                    "description": "We embrace modern tools and strategies for better results.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 32, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cv-col-5",
+              "elType": "column",
+              "settings": {"_column_size": 20, "padding": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": false}},
+              "elements": [
+                {
+                  "id": "cv-transparency",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": {"value": "fas fa-shield-halved", "library": "fa-solid"},
+                    "title": "Transparency",
+                    "description": "We believe in open, honest communication at all times.",
+                    "title_color": "#1A1A2E",
+                    "description_color": "#666666",
+                    "align": "center",
+                    "icon_align": "top",
+                    "icon_size": {"unit": "px", "size": 32, "sizes": []},
+                    "icon_color": "#c8a951"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-choose",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 1100, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#F7F8FA",
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "wc-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Why Choose 11AA Real Estate?",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#1A1A2E"
+          }
+        },
+        {
+          "id": "wc-list",
+          "elType": "widget",
+          "widgetType": "icon-list",
+          "settings": {
+            "icon_list": [
+              {"text": "12+ years of market expertise in Sri Lanka", "selected_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+              {"text": "500+ successful property transactions", "selected_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+              {"text": "Professional, multilingual team", "selected_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+              {"text": "Comprehensive market analysis and valuation", "selected_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+              {"text": "End-to-end service from search to closing", "selected_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}}
+            ],
+            "text_color": "#444444",
+            "icon_color": "#c8a951",
+            "icon_align": "left",
+            "typography_typography": "custom",
+            "typography_font_size": {"unit": "px", "size": 17, "sizes": []}
+          }
+        }
+      ]
+    },
+    {
+      "id": "about-stats",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#1A1A2E",
+        "padding": {"unit": "px", "top": "70", "right": "0", "bottom": "70", "left": "0", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "about-stats-shortcode",
+          "elType": "widget",
+          "widgetType": "shortcode",
+          "settings": {
+            "shortcode": "[realestate_stats show=\"all\"]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "about-cta",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {"unit": "px", "size": 800, "sizes": []},
+        "padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false},
+        "text_align": "center"
+      },
+      "elements": [
+        {
+          "id": "about-cta-title",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Ready to Work With Us?",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#1A1A2E"
+          }
+        },
+        {
+          "id": "about-cta-btn",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Contact Us Today",
+            "link": {"url": "/contact-us/", "is_external": "", "nofollow": ""},
+            "align": "center",
+            "background_color": "#c8a951",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true},
+            "text_padding": {"unit": "px", "top": "14", "right": "32", "bottom": "14", "left": "32", "isLinked": false},
+            "_margin": {"unit": "px", "top": "10", "right": "10", "bottom": "0", "left": "0", "isLinked": false}
+          }
+        }
+      ]
+    }
+  ]
+}

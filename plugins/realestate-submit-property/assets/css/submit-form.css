@@ -1,0 +1,373 @@
+.resp-form-wrapper {
+	max-width: 900px;
+	margin: 40px auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.resp-submit-form {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+}
+
+.resp-form-header {
+	background: linear-gradient(135deg, #1a2744, #2c3e6b);
+	color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+
+.resp-form-header h2 {
+	margin: 0 0 8px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #d4af37;
+}
+
+.resp-form-header p {
+	margin: 0;
+	font-size: 15px;
+	opacity: 0.85;
+}
+
+.resp-form-section {
+	padding: 32px 40px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.resp-section-title {
+	margin: 0 0 20px;
+	padding-bottom: 12px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #1a2744;
+	border-bottom: 2px solid #d4af37;
+	display: inline-block;
+}
+
+.resp-form-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.resp-field-full {
+	grid-column: 1 / -1;
+}
+
+.resp-field-group label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+}
+
+.resp-field-group label .required {
+	color: #d4af37;
+}
+
+.resp-field-group input[type="text"],
+.resp-field-group input[type="tel"],
+.resp-field-group input[type="email"],
+.resp-field-group input[type="number"],
+.resp-field-group select,
+.resp-field-group textarea {
+	width: 100%;
+	padding: 10px 14px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 14px;
+	color: #333;
+	background: #fafafa;
+	transition: border-color 0.2s, box-shadow 0.2s;
+	box-sizing: border-box;
+}
+
+.resp-field-group input:focus,
+.resp-field-group select:focus,
+.resp-field-group textarea:focus {
+	border-color: #d4af37;
+	box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+	background: #fff;
+	outline: none;
+}
+
+.resp-field-group textarea {
+	resize: vertical;
+	min-height: 80px;
+}
+
+.resp-field-group input.error,
+.resp-field-group select.error,
+.resp-field-group textarea.error {
+	border-color: #e74c3c;
+	box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+}
+
+.resp-error {
+	display: block;
+	color: #e74c3c;
+	font-size: 12px;
+	margin-top: 4px;
+	min-height: 16px;
+}
+
+.resp-char-count {
+	display: block;
+	text-align: right;
+	font-size: 12px;
+	color: #888;
+	margin-top: 4px;
+}
+
+.resp-input-with-prefix {
+	display: flex;
+	align-items: stretch;
+}
+
+.resp-prefix {
+	display: flex;
+	align-items: center;
+	padding: 0 12px;
+	background: #1a2744;
+	color: #d4af37;
+ font-weight: 700;
+	font-size: 14px;
+	border-radius: 6px 0 0 6px;
+	border: 1px solid #1a2744;
+}
+
+.resp-input-with-prefix input {
+	border-radius: 0 6px 6px 0 !important;
+}
+
+.resp-dual-input {
+	display: flex;
+	gap: 0;
+}
+
+.resp-dual-input input {
+	flex: 1;
+	border-radius: 6px 0 0 6px !important;
+}
+
+.resp-dual-input select {
+	flex: 0 0 auto;
+	border-radius: 0 6px 6px 0 !important;
+	min-width: 100px;
+}
+
+.resp-checkbox-label {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.5;
+}
+
+.resp-checkbox-label input[type="checkbox"] {
+	margin-top: 3px;
+	width: auto;
+	accent-color: #d4af37;
+}
+
+.resp-upload-zone {
+	border: 2px dashed #ccc;
+	border-radius: 10px;
+	padding: 40px;
+	text-align: center;
+	cursor: pointer;
+	transition: border-color 0.2s, background 0.2s;
+	position: relative;
+}
+
+.resp-upload-zone:hover,
+.resp-upload-zone.dragover {
+	border-color: #d4af37;
+	background: rgba(212, 175, 55, 0.05);
+}
+
+.resp-file-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.resp-upload-icon {
+	font-size: 48px;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.resp-upload-text {
+	font-size: 16px;
+	color: #555;
+	margin: 0 0 8px;
+}
+
+.resp-upload-hint {
+	font-size: 13px;
+	color: #999;
+	margin: 0;
+}
+
+.resp-upload-progress {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.resp-progress-bar {
+	flex: 1;
+	height: 6px;
+	background: #eee;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.resp-progress-fill {
+	height: 100%;
+	background: #d4af37;
+	border-radius: 3px;
+	width: 0;
+	transition: width 0.3s;
+}
+
+.resp-progress-text {
+	font-size: 13px;
+	color: #666;
+}
+
+.resp-preview-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 12px;
+	margin-top: 16px;
+}
+
+.resp-preview-item {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	aspect-ratio: 1;
+	border: 1px solid #eee;
+}
+
+.resp-preview-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.resp-preview-remove {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 24px;
+	height: 24px;
+	background: rgba(231, 76, 60, 0.9);
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.resp-image-error {
+	margin-top: 8px;
+}
+
+.resp-form-actions {
+	padding: 32px 40px;
+	text-align: center;
+	background: #fafafa;
+}
+
+.resp-submit-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 14px 48px;
+	background: linear-gradient(135deg, #1a2744, #2c3e6b);
+	color: #d4af37;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resp-submit-btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 16px rgba(26, 39, 68, 0.3);
+}
+
+.resp-submit-btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	transform: none;
+	box-shadow: none;
+}
+
+.resp-form-message {
+	margin: 0 40px 20px;
+	padding: 16px 20px;
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+.resp-form-message.success {
+	background: #d4edda;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+}
+
+.resp-form-message.error {
+	background: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+}
+
+.resp-honeypot {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	opacity: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	.resp-form-section {
+		padding: 24px 20px;
+	}
+
+	.resp-form-header {
+		padding: 30px 20px;
+	}
+
+	.resp-form-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.resp-form-actions {
+		padding: 24px 20px;
+	}
+
+	.resp-form-message {
+		margin: 0 20px 20px;
+	}
+}

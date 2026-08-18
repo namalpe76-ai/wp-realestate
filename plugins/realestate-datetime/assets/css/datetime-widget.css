@@ -1,0 +1,138 @@
+.realestate-datetime-widget {
+    display: inline-block;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.datetime-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 32px;
+}
+
+.datetime-day {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.datetime-date {
+    font-size: 15px;
+    color: #646970;
+    font-weight: 400;
+}
+
+.datetime-time {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2271b1;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-top: 4px;
+    font-variant-numeric: tabular-nums;
+}
+
+.datetime-noscript {
+    font-size: 14px;
+    color: #646970;
+    text-align: center;
+    padding: 12px;
+    background: #f0f0f1;
+    border-radius: 8px;
+}
+
+/* Dark variant */
+.variant-dark .datetime-display {
+    background: #1a1a2e;
+    border-radius: 12px;
+    padding: 28px 40px;
+}
+
+.variant-dark .datetime-day {
+    color: #e0e0e0;
+}
+
+.variant-dark .datetime-date {
+    color: #a0a0b0;
+}
+
+.variant-dark .datetime-time {
+    color: #00d4ff;
+}
+
+/* Light variant */
+.variant-light .datetime-display {
+    background: #ffffff;
+    border: 1px solid #e2e4e7;
+    border-radius: 12px;
+    padding: 28px 40px;
+}
+
+.variant-light .datetime-day {
+    color: #1d2327;
+}
+
+.variant-light .datetime-date {
+    color: #646970;
+}
+
+.variant-light .datetime-time {
+    color: #2271b1;
+}
+
+/* Gradient variant */
+.variant-gradient .datetime-display {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 28px 40px;
+}
+
+.variant-gradient .datetime-day {
+    color: #ffffff;
+}
+
+.variant-gradient .datetime-date {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.variant-gradient .datetime-time {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .datetime-time {
+        font-size: 32px;
+    }
+
+    .datetime-day {
+        font-size: 16px;
+    }
+
+    .datetime-display {
+        padding: 16px 24px;
+    }
+
+    .variant-dark .datetime-display,
+    .variant-gradient .datetime-display {
+        padding: 20px 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .datetime-time {
+        font-size: 26px;
+    }
+
+    .datetime-day {
+        font-size: 14px;
+    }
+
+    .datetime-date {
+        font-size: 13px;
+    }
+}

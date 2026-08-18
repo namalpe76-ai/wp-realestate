@@ -1,0 +1,210 @@
+.realestate-weather-widget {
+    max-width: 360px;
+    margin: 20px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    padding: 24px;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.weather-location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.location-country {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.weather-refresh-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.weather-refresh-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.weather-refresh-btn.spinning {
+    animation: weatherSpin 1s linear infinite;
+}
+
+@keyframes weatherSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.weather-main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-icon-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.weather-temperature {
+    display: flex;
+    align-items: flex-start;
+}
+
+.temp-value {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.temp-unit {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.weather-condition {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-top: 4px;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.detail-icon {
+    font-size: 18px;
+}
+
+.detail-label {
+    font-size: 11px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.weather-footer {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.weather-updated {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.weather-error-state {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 24px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.weather-error-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #d63638;
+}
+
+.weather-error-message {
+    font-size: 14px;
+    color: #646970;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.weather-loading {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    padding: 60px 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.weather-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: weatherSpin 0.8s linear infinite;
+    margin: 0 auto 16px;
+}
+
+@media (max-width: 400px) {
+    .realestate-weather-widget {
+        max-width: 100%;
+    }
+
+    .weather-card {
+        padding: 20px;
+    }
+
+    .temp-value {
+        font-size: 44px;
+    }
+
+    .weather-icon {
+        width: 64px;
+        height: 64px;
+    }
+}

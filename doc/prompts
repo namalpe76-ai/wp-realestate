@@ -1,0 +1,922 @@
+# Professional Real Estate Website – WordPress + Astra + Elementor
+
+## Project Objective
+
+Build a fully functional, professional real-estate website locally using:
+
+- WordPress
+- Astra Theme
+- Elementor / Elementor Pro where required
+- WordPress database
+- Responsive design
+- HTML5
+- CSS3
+- JavaScript where required
+- PHP/WordPress functionality where required
+
+The website must be designed as a professional real-estate business website that can later be migrated from the local development environment to a live hosting server.
+
+The website should not look like a simple WordPress template. It should have a modern, premium, trustworthy real-estate-company appearance.
+
+---
+
+# 1. Website Structure
+
+Create the following pages:
+
+1. Home
+2. Properties
+3. Property Details
+4. About Us
+5. Services
+6. Contact Us
+7. Submit Your Property
+8. Customer Enquiry
+9. Privacy Policy
+10. Terms & Conditions
+
+Create a professional header and footer that are shared across the website.
+
+---
+
+# 2. Home / Landing Page
+
+Create a premium real-estate landing page.
+
+### Hero Section
+
+Include:
+
+- Large professional real-estate background image
+- Company logo
+- Main headline
+- Short company introduction
+- "View Properties" button
+- "Contact Us" button
+- Property search interface
+
+Example headline:
+
+"Find Your Perfect Property"
+
+Example subtitle:
+
+"Discover premium residential and commercial properties in Sri Lanka."
+
+---
+
+# 3. Live Date and Time
+
+On the landing page display:
+
+- Current date
+- Current local time
+- Automatic real-time clock
+- Time should update automatically without refreshing the page.
+
+Example:
+
+Tuesday, 18 August 2026
+10:50 PM
+
+Use Sri Lanka time zone:
+
+Asia/Colombo
+
+The date and time should be generated dynamically using JavaScript rather than hard-coded text.
+
+---
+
+# 4. Weather Information
+
+Display a weather widget on the landing page.
+
+Show:
+
+- Current temperature
+- Weather condition
+- Weather icon
+- Location
+- Optional humidity
+- Optional wind speed
+
+Example:
+
+Colombo, Sri Lanka
+29°C
+Partly Cloudy
+
+The weather data must come from a weather API rather than being hard-coded.
+
+Create a configuration section where the API key and location can be changed later.
+
+If the weather API is unavailable, display a graceful fallback such as:
+
+"Weather information temporarily unavailable."
+
+---
+
+# 5. Visitor Counter
+
+Create a professional statistics section.
+
+Display counters such as:
+
+- Properties Listed
+- Properties Sold
+- Happy Customers
+- Website Visitors
+
+Example:
+
+500+ Properties Listed
+125+ Properties Sold
+350+ Happy Customers
+10,000+ Website Visitors
+
+The **Website Visitors** counter should be based on actual website visits rather than simply displaying a fixed number.
+
+Where possible, implement:
+
+- Total visitors
+- Page views
+- Today's visitors
+- Optional monthly visitors
+
+Do not fake the visitor statistics.
+
+Use a suitable WordPress analytics/statistics solution or implement a lightweight database-based counter.
+
+The visitor counter must be designed so it can later operate correctly on the production website.
+
+---
+
+# 6. Property Search
+
+Create a property-search section.
+
+Search/filter options:
+
+- Property Type
+- Sale / Rent
+- Location
+- Minimum Price
+- Maximum Price
+- Bedrooms
+- Bathrooms
+- Property Size
+
+Property types:
+
+- House
+- Apartment
+- Land
+- Commercial Property
+- Office
+- Shop
+- Warehouse
+- Villa
+
+Create a clean search interface with a prominent:
+
+"Search Properties"
+
+button.
+
+---
+
+# 7. Property Listing System
+
+Create a professional property listing system.
+
+Each property should contain:
+
+- Property title
+- Property ID
+- Property type
+- Sale/Rent status
+- Price
+- Location
+- Address
+- Description
+- Bedrooms
+- Bathrooms
+- Land size
+- Building size
+- Parking
+- Property features
+- Main image
+- Multiple gallery images
+- Google Maps location
+- Contact/enquiry button
+
+Example:
+
+PROPERTY ID: RE-001
+
+Luxury 4 Bedroom House
+
+Location: Colombo 07
+
+Price: LKR 85,000,000
+
+Bedrooms: 4
+Bathrooms: 3
+Parking: 2
+Land: 12 Perches
+
+Button:
+
+"Enquire About This Property"
+
+---
+
+# 8. Property Details Page
+
+When a visitor clicks a property, open a dedicated property details page.
+
+Include:
+
+- Large image gallery
+- Property title
+- Price
+- Location
+- Property ID
+- Key features
+- Full description
+- Property specifications
+- Map
+- Contact agent
+- Enquiry form
+- WhatsApp/contact button if configured
+
+Include:
+
+"Schedule a Viewing"
+
+button.
+
+---
+
+# 9. Customer Enquiry System
+
+Create a professional customer enquiry form.
+
+Fields:
+
+- Full Name
+- Email Address
+- Telephone Number
+- Preferred Contact Method
+- Property ID
+- Property Name
+- Enquiry Type
+- Preferred Viewing Date
+- Message
+
+Enquiry Type options:
+
+- Property Information
+- Schedule Viewing
+- Purchase
+- Rental
+- Sell My Property
+- General Enquiry
+
+Button:
+
+"Submit Enquiry"
+
+---
+
+# 10. Enquiry Notification
+
+When a customer submits an enquiry:
+
+1. Store the enquiry.
+2. Send an email notification to the website administrator.
+3. Send an acknowledgement email to the customer.
+4. Display a professional success message.
+5. Optionally redirect the customer to a Thank You page.
+
+Administrator notification:
+
+Subject:
+
+"New Real Estate Customer Enquiry"
+
+The email should contain:
+
+- Customer name
+- Email
+- Telephone
+- Property
+- Property ID
+- Enquiry type
+- Preferred viewing date
+- Message
+- Submission date/time
+
+Use the customer's email as Reply-To.
+
+Do not use the customer's email address as the "From" address.
+
+Configure SMTP/dedicated mail delivery for reliable email delivery.
+
+Elementor supports email notifications, collecting submissions and separate confirmation emails through its form actions.
+
+---
+
+# 11. Enquiry Management
+
+Create an administrator-friendly method to view enquiries.
+
+Administrator should be able to see:
+
+- Customer name
+- Email
+- Telephone
+- Property
+- Enquiry type
+- Date
+- Status
+
+Status options:
+
+- New
+- Contacted
+- Viewing Scheduled
+- Negotiation
+- Closed
+
+Where practical, provide:
+
+- Search
+- Filter
+- Delete
+- Export
+
+The system should make it easy for the real-estate business owner to manage leads.
+
+---
+
+# 12. Submit Your Property
+
+Create a separate form for property owners who want to list their property.
+
+Fields:
+
+- Owner Name
+- Telephone
+- Email
+- Property Type
+- Location
+- Address
+- Expected Price
+- Land Size
+- Building Size
+- Bedrooms
+- Bathrooms
+- Description
+- Property Images
+
+After submission:
+
+- Store the enquiry
+- Notify administrator
+- Show confirmation message
+- Mark the submission as "Pending Review"
+
+Do NOT automatically publish submitted properties.
+
+The administrator must review and approve them first.
+
+---
+
+# 13. About Us Page
+
+Create:
+
+- Company introduction
+- Mission
+- Vision
+- Core values
+- Why choose us
+- Professional team section
+- Customer statistics
+- Call-to-action
+
+Use professional real-estate imagery.
+
+---
+
+# 14. Services Page
+
+Create service sections for:
+
+### Property Sales
+
+Professional property marketing and sales.
+
+### Property Rentals
+
+Helping customers find suitable rental properties.
+
+### Property Valuation
+
+Property valuation and market assessment.
+
+### Property Marketing
+
+Professional photography, digital marketing and property promotion.
+
+### Property Management
+
+Management services for property owners.
+
+### Investment Consultancy
+
+Assistance with property investment decisions.
+
+---
+
+# 15. Contact Page
+
+Include:
+
+- Company address
+- Telephone
+- Email
+- Business hours
+- Google Map
+- Contact form
+- WhatsApp button
+- Social media links
+
+Contact form fields:
+
+Name
+Email
+Phone
+Subject
+Message
+
+---
+
+# 16. Responsive Design
+
+The website must work professionally on:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile phone
+
+Check:
+
+- 1920px
+- 1440px
+- 1024px
+- 768px
+- 480px
+- 360px
+
+No horizontal scrolling.
+
+All buttons and forms must be mobile friendly.
+
+---
+
+# 17. Header
+
+Create a professional header containing:
+
+Logo
+
+Navigation:
+
+Home
+Properties
+Services
+About
+Contact
+
+CTA button:
+
+"Find a Property"
+
+Make the header sticky on desktop and mobile.
+
+---
+
+# 18. Footer
+
+Create a professional footer with:
+
+- Logo
+- Short company description
+- Navigation
+- Services
+- Contact information
+- Social media
+- Newsletter/enquiry CTA
+- Copyright
+- Privacy Policy
+- Terms & Conditions
+
+Example:
+
+© 2026 Your Real Estate Company. All Rights Reserved.
+
+---
+
+# 19. Professional Design
+
+Use a premium corporate real-estate design.
+
+Recommended design characteristics:
+
+- Clean layout
+- Large property photographs
+- Plenty of whitespace
+- Professional typography
+- Consistent spacing
+- Elegant buttons
+- Subtle animations
+- Card-based property listings
+- Professional icons
+- Clear calls-to-action
+
+Use a professional colour palette such as:
+
+Primary: Deep Navy Blue
+Secondary: Gold/Amber
+Background: White
+Secondary Background: Light Gray
+Text: Dark Gray
+
+Do not overuse animations.
+
+The website should look trustworthy rather than flashy.
+
+---
+
+# 20. SEO
+
+Configure basic SEO structure.
+
+Every page should have:
+
+- SEO-friendly title
+- Meta description
+- Proper H1
+- H2/H3 hierarchy
+- Image ALT text
+- Clean URLs
+- Internal linking
+- Mobile responsiveness
+- Fast loading
+
+Example URL:
+
+/properties/
+
+Property URL:
+
+/property/luxury-4-bedroom-house-colombo/
+
+---
+
+# 21. Performance
+
+Optimize the website for performance.
+
+Implement:
+
+- Proper image sizing
+- WebP images where possible
+- Lazy loading
+- Minimized unnecessary JavaScript
+- Lightweight CSS
+- Avoid unnecessary plugins
+- Browser caching where appropriate
+
+Do not install large numbers of plugins unnecessarily.
+
+---
+
+# 22. Security
+
+Implement basic WordPress security best practices.
+
+Include:
+
+- Secure administrator account
+- Strong passwords
+- Spam protection
+- Form validation
+- Input sanitization
+- Output escaping
+- Secure file uploads
+- Restricted property image uploads
+- WordPress/plugin updates
+
+Never expose API keys directly in front-end JavaScript if the API requires secret credentials.
+
+---
+
+# 23. Local Development Architecture
+
+Develop the website locally first.
+
+Recommended structure:
+
+WordPress
+│
+├── wp-admin
+├── wp-content
+│ ├── themes
+│ │ └── astra
+│ ├── plugins
+│ └── uploads
+│
+└── wp-includes
+
+Use Astra as the WordPress theme.
+
+Use Elementor for page construction.
+
+Keep custom functionality separated from Elementor wherever practical.
+
+Do not place major custom PHP functionality directly into Astra's parent theme.
+
+If custom PHP functionality is required, use a child theme or a custom plugin.
+
+---
+
+# 24. Development Tools
+
+Use:
+
+- WordPress
+- Astra
+- Elementor
+- Elementor Pro where required
+- VS Code
+- Docker/local WordPress environment
+- Git/GitHub for version control
+- Browser Developer Tools
+
+The project should be structured so that VS Code can be used to inspect and edit:
+
+- PHP
+- CSS
+- JavaScript
+- WordPress files
+- Theme files
+- Plugin files
+
+---
+
+# 25. Custom Code
+
+Where custom code is required:
+
+Use:
+
+- PHP for WordPress/backend functionality
+- JavaScript for live date/time and dynamic front-end functionality
+- CSS for custom styling
+- WordPress hooks/actions/filters
+
+Code must be:
+
+- Clean
+- Commented
+- Modular
+- Secure
+- Maintainable
+
+Do not unnecessarily recreate functionality that Elementor or WordPress already provides.
+
+---
+
+# 26. Weather API
+
+Create a configurable weather integration.
+
+The developer should be able to configure:
+
+WEATHER_API_KEY
+
+WEATHER_LOCATION
+
+WEATHER_UNIT
+
+Use Celsius by default.
+
+The API implementation should handle:
+
+- Successful API response
+- API failure
+- Invalid API key
+- Network failure
+- Missing weather data
+
+Display a user-friendly fallback message.
+
+---
+
+# 27. Current Date/Time
+
+Create a reusable JavaScript component.
+
+Use:
+
+Asia/Colombo
+
+Display:
+
+Day
+Date
+Month
+Year
+Time
+
+Update the time every second.
+
+Do not reload the page to update the clock.
+
+---
+
+# 28. Visitor Analytics
+
+Implement real visitor tracking.
+
+Avoid simply increasing a number every time the page is refreshed.
+
+Where possible distinguish:
+
+- Unique visitors
+- Returning visitors
+- Page views
+
+Provide an administrator view of visitor statistics.
+
+The system should be designed so analytics can later be connected to Google Analytics or another professional analytics solution.
+
+---
+
+# 29. Customer Notifications
+
+Create the following notification workflow:
+
+CUSTOMER
+↓
+Completes enquiry form
+↓
+Validation
+↓
+Save enquiry
+↓
+Administrator notification
+↓
+Customer acknowledgement
+↓
+Thank You page
+
+Administrator email:
+
+"New Customer Enquiry Received"
+
+Customer email:
+
+"Thank you for contacting [Company Name]"
+
+The administrator should receive the enquiry immediately after successful submission.
+
+---
+
+# 30. Testing
+
+Before considering the project complete, test:
+
+### Website
+
+- Home page
+- Navigation
+- Property search
+- Property listing
+- Property details
+- Contact page
+- About page
+- Services page
+
+### Forms
+
+- Valid enquiry
+- Invalid email
+- Missing required fields
+- Customer notification
+- Administrator notification
+- Database/storage
+- Thank-you message
+
+### Responsive
+
+- Desktop
+- Tablet
+- Mobile
+
+### Dynamic Components
+
+- Current date
+- Current time
+- Weather
+- Visitor counter
+
+### Security
+
+- Form validation
+- File upload validation
+- Spam protection
+- User permissions
+
+---
+
+# 31. Local Development URL
+
+After installation and configuration, make the site accessible through the local WordPress URL.
+
+Typical examples:
+
+http://localhost/
+
+or
+
+http://localhost:8080/
+
+The actual URL must be determined from the local Docker/WordPress configuration.
+
+Also document:
+
+WordPress Admin URL
+
+http://localhost/wp-admin/
+
+or the corresponding configured local URL.
+
+---
+
+# 32. Final Deliverables
+
+At completion provide:
+
+1. Fully functioning local WordPress website
+2. Astra configuration
+3. Elementor page designs
+4. Property listing system
+5. Property details pages
+6. Customer enquiry system
+7. Email notification system
+8. Customer acknowledgement email
+9. Visitor counter/analytics
+10. Live date/time
+11. Weather integration
+12. Responsive design
+13. Contact page
+14. About page
+15. Services page
+16. Submit Property form
+17. Security configuration
+18. SEO structure
+19. Performance optimization
+20. Backup/export procedure
+21. Documentation for moving the website from local development to live hosting
+
+---
+
+# Important Development Rule
+
+Build this as a **real production-ready architecture**, not merely a visual Elementor mockup.
+
+Use Elementor for visual/page-building work.
+
+Use WordPress/Astra for the website framework.
+
+Use plugins or custom WordPress functionality for dynamic features.
+
+Keep custom code organized and maintainable.
+
+The final project should be suitable for later deployment to a real domain and hosting server.
+
+At every stage, explain:
+
+1. What is being created
+2. Why it is required
+3. Which WordPress/Astra/Elementor component is being used
+4. Where the files are located
+5. How the component works
+6. How to test it locally
+
+The goal is not only to create the website but also to teach the developer how a professional WordPress + Astra + Elementor project is structured.
