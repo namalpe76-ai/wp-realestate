@@ -1,0 +1,156 @@
+================================================================
+  WP RealEstate - Project File Structure
+================================================================
+
+D:\11AA WP RealEstate\
+|
+|-- .gitignore                          # Git ignore rules
+|-- CONNECTIONS.txt                     # URLs, credentials, repo link
+|-- FILE-STRUCTURE.txt                  # This file
+|
+|-- child-theme/
+|   \-- realestate-child/               # Astra child theme
+|       |-- 404.php                     # 404 error page
+|       |-- archive.php                 # Archive template
+|       |-- footer.php                  # Site footer
+|       |-- front-page.php              # Homepage template
+|       |-- functions.php               # Theme functions & enqueues
+|       |-- header.php                  # Site header
+|       |-- index.php                   # Main index template
+|       |-- page.php                    # Generic page template
+|       |-- search.php                  # Search results template
+|       |-- single.php                  # Single post template
+|       |-- style.css                   # Theme declaration & overrides
+|       |
+|       |-- assets/
+|       |   |-- css/                    # (future styles)
+|       |   \-- js/
+|       |       |-- analytics.js        # Analytics counter script
+|       |       |-- datetime.js         # Date/time clock script
+|       |       |-- header.js           # Header/navigation script
+|       |       \-- weather.js          # Weather widget script
+|       |
+|       \-- template-parts/
+|           \-- content-property-card.php  # Property card partial
+|
+|-- doc/
+|   \-- prompts                         # Development prompts/notes
+|
+|-- docker/
+|   |-- .env                            # Environment variables (DB creds)
+|   |-- docker-compose.yml              # Container orchestration
+|   |-- php-custom.ini                  # Custom PHP config
+|   \-- SETUP.txt                       # Quick start instructions
+|
+|-- docs/
+|   |-- developer/
+|   |   |-- project-structure.md        # Architecture documentation
+|   |   \-- shortcode-reference.md      # Custom shortcodes guide
+|   |
+|   |-- migration/
+|   |   |-- backup-procedure.md         # Backup steps
+|   |   \-- migration-guide.md          # Migration instructions
+|   |
+|   |-- setup/
+|   |   |-- configuration.md            # Config documentation
+|   |   \-- getting-started.md          # Onboarding guide
+|   |
+|   \-- testing/
+|       \-- testing-checklist.md        # QA / testing checklist
+|
+|-- elementor-templates/
+|   |-- elementor-widgets-map.php       # Widget mapping
+|   |-- page-setup.php                  # Page setup helper
+|   |-- setup-instructions.md           # Elementor setup guide
+|   \-- json/
+|       |-- about-page.json             # About page template
+|       |-- contact-page.json           # Contact page template
+|       |-- home-page.json              # Homepage template
+|       \-- services-page.json          # Services page template
+|
+\-- plugins/
+    |
+    |-- realestate-core/                # Core property post type & features
+    |   |-- realestate-core.php         # Plugin main file
+    |   |-- includes/
+    |   |   |-- class-property-email.php
+    |   |   |-- class-property-meta-boxes.php
+    |   |   |-- class-property-post-type.php
+    |   |   |-- class-property-search.php
+    |   |   \-- class-property-widgets.php
+    |   |-- templates/
+    |   |   |-- archive-properties.php
+    |   |   |-- search-results.php
+    |   |   \-- single-property.php
+    |   \-- assets/
+    |       |-- css/property.css
+    |       \-- js/property.js
+    |
+    |-- realestate-analytics/           # Visitor analytics & stats
+    |   |-- realestate-analytics.php
+    |   |-- includes/
+    |   |   |-- class-visitor-stats.php
+    |   |   \-- class-visitor-tracker.php
+    |   |-- admin/
+    |   |   \-- class-analytics-admin.php
+    |   \-- assets/
+    |       |-- css/analytics-admin.css
+    |       \-- js/analytics-counter.js
+    |
+    |-- realestate-datetime/            # Date/time display widget
+    |   |-- realestate-datetime.php
+    |   |-- includes/
+    |   |   \-- class-datetime-display.php
+    |   \-- assets/
+    |       |-- css/datetime-widget.css
+    |       \-- js/datetime-clock.js
+    |
+    |-- realestate-enquiry/             # Contact/enquiry form system
+    |   |-- realestate-enquiry.php
+    |   |-- includes/
+    |   |   |-- class-enquiry-email.php
+    |   |   |-- class-enquiry-form.php
+    |   |   \-- class-enquiry-storage.php
+    |   |-- admin/
+    |   |   |-- class-enquiry-admin.php
+    |   |   \-- views/
+    |   |       |-- enquiry-detail.php
+    |   |       \-- enquiry-list.php
+    |   \-- assets/
+    |       |-- css/
+    |       |   |-- enquiry-admin.css
+    |       |   \-- enquiry-form.css
+    |       \-- js/
+    |           |-- enquiry-admin.js
+    |           \-- enquiry-form.js
+    |
+    |-- realestate-submit-property/     # Frontend property submission
+    |   |-- realestate-submit-property.php
+    |   |-- includes/
+    |   |   |-- class-submission-email.php
+    |   |   |-- class-submission-handler.php
+    |   |   \-- class-submit-form.php
+    |   |-- admin/
+    |   |   |-- class-submission-admin.php
+    |   |   \-- views/
+    |   |       |-- submission-detail.php
+    |   |       \-- submission-list.php
+    |   \-- assets/
+    |       |-- css/
+    |       |   |-- submission-admin.css
+    |       |   \-- submit-form.css
+    |       \-- js/
+    |           \-- submit-form.js
+    |
+    \-- realestate-weather/             # Weather widget for properties
+        |-- realestate-weather.php
+        |-- includes/
+        |   |-- class-weather-api.php
+        |   \-- class-weather-widget.php
+        \-- assets/
+            |-- css/weather-widget.css
+            \-- js/weather-widget.js
+
+================================================================
+  6 Plugins | 1 Child Theme | 4 Elementor Templates | 83 Files
+================================================================
