@@ -1,0 +1,35 @@
+=========================================
+  Real Estate WordPress - Connections
+=========================================
+
+LOCAL ACCESS URLs
+-----------------------------------------
+  WordPress:      http://localhost:8082
+  WordPress Admin: http://localhost:8082/wp-admin
+  phpMyAdmin:     http://localhost:8081
+
+WORDPRESS ADMIN LOGIN
+-----------------------------------------
+  Username:  admin
+  Password:  admin123
+
+DATABASE CONNECTION
+-----------------------------------------
+  Host:      localhost
+  Port:      3306
+  Database:  realestate_wp
+  Username:  realestate_admin
+  Password:  realestate_pass_2026
+  Root Pass: realestate_root_2026
+
+DOCKER CONTAINERS
+-----------------------------------------
+  realestate_wordpress   ->  port 8082
+  realestate_mysql       ->  port 3306
+  realestate_phpmyadmin  ->  port 8081
+
+GITHUB REPOSITORY
+-----------------------------------------
+  https://github.com/namalpe76-ai/wp-realestate
+
+=========================================
